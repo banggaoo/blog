@@ -1,2 +1,4 @@
 theme: minima
-author: "James Lee"
+author:
+  name: James Lee
+  email: "jameslee@goodeffect.com"
