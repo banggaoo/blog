@@ -1,7 +1,7 @@
 ---
 title: "Serendipity in recommendation system"
 date: 2023-07-20
-tags: [AI, RecSys]
+tags: [UX, RecSys]
 ---
 Personalized Recommendations: Users' Expectations and Assumptions
 
