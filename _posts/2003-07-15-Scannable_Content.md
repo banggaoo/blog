@@ -1,6 +1,6 @@
 ---
 title: "Scannable Content"
-date: 2023-08-06
+date: 2023-07-15
 tags: [Content, UX]
 ---
 ## Agenda
