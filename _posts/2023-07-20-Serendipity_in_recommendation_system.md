@@ -1,7 +1,7 @@
 ---
 title: "Serendipity in recommendation system"
 date: 2023-07-20
-tags: [AI]
+tags: [AI, RecSys]
 ---
 In predictive systems, Serendipity refers to the ability of a system to provide users with unexpected, delightful, and surprising recommendations. It goes beyond simply suggesting items that match the user's known preferences or previously expressed interests.
 
