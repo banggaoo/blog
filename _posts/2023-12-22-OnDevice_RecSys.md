@@ -4,24 +4,33 @@ date: 2023-12-22
 tags: [AI, RecSys]
 ---
 ## Purpose
-Developing a recommendation system that rearranges content rankings locally
-Reviewing OnDevice AI app
+Developing a recommendation system that rearranges content rankings locally.
+
+Reviewing OnDevice AI app.
 
 ## Specifications
-Exposure of feedback component when user returns after selecting content
+Exposure of feedback component when user returns after selecting content.
+
 When you select like/dislike in the feedback component, the information is stored in the ranking system.
+
 Rearrange the list of content waiting to be exposed in the recommendation system just before new content is exposed.
-Displayed in order of highest rank among the rearranged content list
+
+Displayed in order of highest rank among the rearranged content list.
 
 ## Design
-Predict content you might like using Linear Regression
-Train in real time on OnDevice using CreateML
-Convert content information including like/dislike feedback into tabular data and use it as learning information
-Immediately predicts after learning and rearranges the list of content waiting to be exposed
+Predict content you might like using Linear Regression.
+
+Train in real time on OnDevice using CreateML.
+
+Convert content information including like/dislike feedback into tabular data and use it as learning information.
+
+Immediately predicts after learning and rearranges the list of content waiting to be exposed.
+
 To prevent unnecessary inference work, predictions are re-performed only when feedback information changes.
 
 ## Implementation
-Create a Regressor during inference to sequentially execute learning and prediction
+Create a Regressor during inference to sequentially execute learning and prediction.
+
 ```swift
     func computeRecommendations(basedOn items: [Likable<Content>]) async throws -> [Content] {
         return try await withCheckedThrowingContinuation { continuation in
@@ -62,10 +71,13 @@ Create a Regressor during inference to sequentially execute learning and predict
 ```
 
 ## Test
-Dislike feedback applied to dating/broadcast content after content exposure
+Dislike feedback applied to dating/broadcast content after content exposure.
+
 As a result of checking the lowest ranking after applying 5 feedbacks, it was confirmed that the ranking of the broadcast content decreased.
 
 ## Examine
 You can do something similar with [MLRecommender](https://developer.apple.com/documentation/createml/mlrecommender) from Apple, but only on MacOS.
+
 Feedback information must be stored in the Persistent Store to maintain feedback data even when the app instance is terminated and restarted.
+
 In the case of OnDevice ranking, it is expected to be free from personal information protection laws, so events that occur throughout the app can be collected and applied to services within the app.
