@@ -81,3 +81,5 @@ You can do something similar with [MLRecommender](https://developer.apple.com/do
 Feedback information must be stored in the Persistent Store to maintain feedback data even when the app instance is terminated and restarted.
 
 In the case of OnDevice ranking, it is expected to be free from personal information protection laws, so events that occur throughout the app can be collected and applied to services within the app.
+
+Assuming an app is adopted OnDevice personalized recommendations gradually, storing user interest information in the Persistant Store in advance is expected to be helpful in providing future features.
