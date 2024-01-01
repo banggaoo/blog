@@ -33,11 +33,13 @@ There are two ways to introduce a model into CoreML.
 ## Model conversion
 
 1. Import the Model
+
 ```python
 from transformers import GPT2LMHeadModel
 ```
 
 2. Declare a function for input/output
+
 ```python
 class FinishMySentence(torch.nn.Module):
 def __init__(self, model=None, eos=198):
@@ -58,6 +60,7 @@ return sentence
 ```
 
 3. Pre-process model
+
 ```python
 token_predictor = GPT2LMHeadModel.from_pretrained("gpt2", torchscript=True).eval()
 random_tokens = torch.randint(10000, (5,))
@@ -67,6 +70,7 @@ scripted_model = torch.jit.script(model)
 ```
 
 4. Convert model
+
 ```python
 mlmodel = ct.convert(
 scripted_model,
@@ -83,12 +87,14 @@ ValueError: Op "136" (op_type: fill) Input shape="135" expects tensor or scalar 
 ## Model reporoduction
 
 1. Get the model
+
 ```python
 lm_head_model = GPT2LMHeadModel.from_pretrained("gpt2")
 model = lm_head_model.transformer
 ```
 
 2. Create builder
+
 ```python
 builder = neural_network.NeuralNetworkBuilder(
     input_features,
@@ -99,6 +105,7 @@ builder = neural_network.NeuralNetworkBuilder(
 ```
 
 3. Create Model
+
 ```python
 mlmodel = coremltools.models.MLModel(builder.spec)
 ```
