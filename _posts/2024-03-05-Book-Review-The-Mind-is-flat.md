@@ -62,15 +62,19 @@ Even if the author's argument is completely wrong, there is no harm in thinking 
 If humans only think spontaneously, existing decision-making methods need to be reexamined.
 
 - Preferences
+
 Because the environment is so important in decision-making, I need to remind myself what kind of environment I am thinking about.
 
 - Prejudice
+
 Beware of bias due to experience when making decisions. This may be a focus due to my specific experience rather than to make the right decision.
 
 - Visualization
+
 I believe that by visualizing reliable data and logical structures and putting them on stage, there is a possibility of producing more correct results when finding patterns.
 
 - Doubt
+
 Keep in mind how fragile your decision-making is.
 
 
