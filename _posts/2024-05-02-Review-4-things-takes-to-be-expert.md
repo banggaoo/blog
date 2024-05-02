@@ -5,6 +5,7 @@ tags: [Expert, Self-development]
 ---
 
 This is a review of Veritasium's YouTube video The 4 things it takes to be an expert.
+https://www.youtube.com/watch?v=5eW6Eagr9XA
 
 ## What is an expert?
 A person who recognizes patterns and uses them to gain insight
