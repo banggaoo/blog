@@ -37,7 +37,7 @@ iOS systems and even third-party apps can be integrated with the Apple Intellige
 
 We provide a behavior and data sharing platform based on App Intents.
 
-## evaluation
+## Analysis
 Apple currently has the most advanced Hybrid AI architecture.
 
 Because LLM-based services that require high costs in the existing cloud are less sustainable, many companies are expected to give up LLM-related services or try to switch to efficient OnDevice AI like Apple.
@@ -47,5 +47,7 @@ Apple Intelligence is expected to evolve into an AI platform that can reach the 
 Apple's lack of ultra-large model-based AI is expected to be made up for through collaboration with OpenAI and others.
 
 [Introducing Apple’s On-Device and Server Foundation Models](https://machinelearning.apple.com/research/introducing-apple-foundation-models)
+
 [Platforms State of the Union](https://developer.apple.com/videos/play/wwdc2024/102/)
+
 [Explore machine learning on Apple platforms](https://developer.apple.com/wwdc24/10223)
