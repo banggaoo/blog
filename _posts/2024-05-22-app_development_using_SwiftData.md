@@ -12,9 +12,9 @@ Except for some state values, all data was handled by applying SwiftData.
 ​
 ## ModelContainer
 ModelContainer is a space where SwiftData's Model is stored. Depending on your needs, you can share one or create several separately.
-​
+
 Even if different ModelContainers are applied to the same Model, they are not related to each other, so it can be confusing if it is not clear which ModelContainer is used in the current View.
-​
+
 Since references between models become frequent and the same ModelContainer must be used, i tend to end up using one large, common ModelContainer.
 ​
 ## Query
