@@ -6,11 +6,14 @@ tags: [iOS, AI]
 
 ## On-device foundation model
 Task-specific.
+
 Compression with Quantization.
+
 Utilization of language (LLM) and image (Diffusion) models.
 
 ## Private Cloud
-Do not store data.
+Do not store data on Cloud.
+
 Open to external audit.
 
 ## Apple Intelligence Architecture
@@ -18,14 +21,17 @@ Open to external audit.
 
 ## App Intents
 Expansion into a platform format supported by various domains.
+
 Required to support Siri actions in third-party apps.
 
 ## Model
 Whisper, Stable Diffusion, Llama, etc. can be imported.
+
 Improved LLM performance on latest versions of MacOS.
 
 ## Code Completion
 Function name auto-completion.
+
 Generate code based on comments.
 
 ## Swift Assist
@@ -36,7 +42,9 @@ Data-race safety. Verification at compile time.
 
 ## Swift Testing
 Declared with @Test attribute.
+
 Write easy-to-read test code.
+
 Easy integration with Test Plan.
 
 ## SwiftUI
@@ -44,8 +52,11 @@ Expanding components shared with UIKit.
 
 ## SwiftData
 Add attribute.
+
 Index support.
+
 Custom data store support: Repositories other than Core Data can be used.
+
 history tracking.
 
 ## iOS
@@ -56,4 +67,5 @@ Tabbar: Provides shortcut-type UI.
 
 ## watchOS
 Smart Stack improvements: Live Activities integration.
+
 Double tap support expanded.
