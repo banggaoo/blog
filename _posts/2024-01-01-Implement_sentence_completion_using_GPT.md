@@ -118,16 +118,21 @@ mlmodel = coremltools.models.MLModel(builder.spec)
 # Applying CoreML Model
 ## Preparation
 Import the created CoreML model into the Xcode project. 
+
 Add token resources for tokenizing.
 
 ## Implementation
 Use an incomplete sentence as input for model inference. 
+
 Select one word from the candidates and use it as output. 
+
 Add the output value to the incomplete sentence and repeat the inference.
 
 ## Conclusion
-There are various tools supporting the ecosystem for NLP introduction, such as HuggingFace and JupyterNotebook, making it relatively easy. 
+There are various tools supporting the ecosystem for NLP introduction, such as HuggingFace and JupyterNotebook, making it relatively easy.
+
 There may be frequent build failures depending on the versions of each library. It is important to establish an isolated environment when creating the model. 
+
 For CoreML, there is a lack of resources, which may lead to spending a long time resolving issues.
 
 ## References
